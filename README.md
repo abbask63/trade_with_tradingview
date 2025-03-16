@@ -1,3 +1,3 @@
 to install run following commands :
 
-apt install talib
+pip install python-telegram-bot tradingview-ta requests numpy TA-Lib
