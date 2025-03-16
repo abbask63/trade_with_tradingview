@@ -183,7 +183,7 @@ def start(update, context):
         )
 
     # Create the support contact button as an InlineKeyboardButton
-    support_button = InlineKeyboardButton("ارتباط با پشتیبانی", url='https://t.me/abbaskarimi8')
+    support_button = InlineKeyboardButton("ارتباط با پشتیبانی", url='https://t.me/adminuser')
     support_markup = InlineKeyboardMarkup([[support_button]])
 
     # Send the support contact button separately
@@ -197,7 +197,7 @@ def start(update, context):
 
 def help1(update, context):
     context.bot.send_message(chat_id=update.message.chat_id, 
-                             text='برای استفاده از ربات با مدیر ربات هماهنگ شوید @abbaskarimi8')
+                             text='برای استفاده از ربات با مدیر ربات هماهنگ شوید @adminuser')
 
 def analyze_crypto(update, context):
     context.bot.send_message(chat_id=update.message.chat_id, text='لطفا نام رمز ارز (مثلا BTC) را وارد کنید.')
@@ -281,7 +281,7 @@ def handle_message(update, context):
         elif update.message.text == "نمایش لیست کاربران":
             list_users(update, context)
         elif update.message.text == "ارتباط با پشتیبانی":  # Allow support button message to be recognized
-            context.bot.send_message(chat_id=update.message.chat_id, text='جهت ارتباط با پشتیبانی: https://t.me/abbaskarimi8')
+            context.bot.send_message(chat_id=update.message.chat_id, text='جهت ارتباط با پشتیبانی: https://t.me/adminuser')
         else:
             search_crypto(update, context)
     else:
@@ -289,7 +289,7 @@ def handle_message(update, context):
         context.bot.send_message(
             chat_id=update.message.chat_id,
             
-            text='شما مجاز به استفاده از ربات نیستید لطفا با پشتیبانی تماس بگیرید https://t.me/abbaskarimi8'
+            text='شما مجاز به استفاده از ربات نیستید لطفا با پشتیبانی تماس بگیرید https://t.me/adminuser'
         )
 
 
